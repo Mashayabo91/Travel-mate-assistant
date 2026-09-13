@@ -23,7 +23,7 @@ Rules:
 class TravelAgent:
     def __init__(self):
         self.groq_key = os.getenv("GROQ_API_KEY")
-        self.groq_model = os.getenv("GROQ_MODEL", "llama3-70b-8192")
+        self.groq_model = os.getenv("GROQ_MODEL", "qwen/qwen3-27b")
         self.client = None
 
         if self.groq_key:
